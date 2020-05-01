@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizzler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jn0-S5-SHn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEe-RQ-ofk">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LUF-aR-OjN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uK-5F-uYd">
+                                        <rect key="frame" x="20" y="70" width="374" height="438"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-ep-hdk" userLabel="AnswerOption1" customClass="MyCustomDesignable" customModule="Quizzler" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="528" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jC5-w5-GJG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Answer Option 1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.27450980390000002" green="0.70980392160000005" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NQ3-ls-5Nl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaT-XY-8Nl" userLabel="AnswerOption2" customClass="MyCustomDesignable" customModule="Quizzler" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="598" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bZt-ga-9dx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Answer Option 2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.27450980390000002" green="0.70980392160000005" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWH-Ep-wvI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbU-Yn-ywD" userLabel="AnswerOption3" customClass="MyCustomDesignable" customModule="Quizzler" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="668" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SPO-0B-0pN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Answer Option 3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.27450980392156865" green="0.70980392156862748" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="les-xn-F0I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKq-3I-OKE" userLabel="AnswerOption4" customClass="MyCustomDesignable" customModule="Quizzler" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="738" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BTS-AF-iTf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Answer Option 4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.27450980392156865" green="0.70980392156862748" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dti-3u-vnh"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="t6o-5c-Wqu">
+                                        <rect key="frame" x="20" y="808" width="374" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="EVv-Qq-Aov"/>
+                                        </constraints>
+                                        <color key="progressTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0uK-5F-uYd" secondAttribute="trailing" constant="20" id="4Vd-MT-X9k"/>
+                                    <constraint firstItem="xEe-RQ-ofk" firstAttribute="leading" secondItem="Jn0-S5-SHn" secondAttribute="leading" constant="20" id="5sk-Vx-aYw"/>
+                                    <constraint firstItem="RaT-XY-8Nl" firstAttribute="leading" secondItem="Jn0-S5-SHn" secondAttribute="leading" constant="20" id="83P-OT-jW9"/>
+                                    <constraint firstAttribute="trailing" secondItem="gKq-3I-OKE" secondAttribute="trailing" constant="20" id="A7J-Pe-cza"/>
+                                    <constraint firstItem="gKq-3I-OKE" firstAttribute="leading" secondItem="Jn0-S5-SHn" secondAttribute="leading" constant="20" id="CG5-I4-UZW"/>
+                                    <constraint firstItem="MbU-Yn-ywD" firstAttribute="leading" secondItem="Jn0-S5-SHn" secondAttribute="leading" constant="20" id="MkG-J5-Fsi"/>
+                                    <constraint firstAttribute="trailing" secondItem="xEe-RQ-ofk" secondAttribute="trailing" constant="20" id="OJB-Kx-Bqb"/>
+                                    <constraint firstItem="0uK-5F-uYd" firstAttribute="leading" secondItem="Jn0-S5-SHn" secondAttribute="leading" constant="20" id="Qdb-jF-qK6"/>
+                                    <constraint firstAttribute="trailing" secondItem="t6o-5c-Wqu" secondAttribute="trailing" constant="20" id="SjY-AE-Nl5"/>
+                                    <constraint firstItem="t6o-5c-Wqu" firstAttribute="leading" secondItem="Jn0-S5-SHn" secondAttribute="leading" constant="20" id="Tux-rW-z41"/>
+                                    <constraint firstAttribute="trailing" secondItem="RaT-XY-8Nl" secondAttribute="trailing" constant="20" id="iuv-cI-F3K"/>
+                                    <constraint firstAttribute="trailing" secondItem="MbU-Yn-ywD" secondAttribute="trailing" constant="20" id="l1f-3p-j6T"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLy-ep-hdk" secondAttribute="trailing" constant="20" id="oYA-Gq-CjK"/>
+                                    <constraint firstItem="cLy-ep-hdk" firstAttribute="leading" secondItem="Jn0-S5-SHn" secondAttribute="leading" constant="20" id="p2K-UM-1Ig"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Jn0-S5-SHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cs8-Ba-z4b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jn0-S5-SHn" secondAttribute="bottom" id="Gs5-cm-ndk"/>
+                            <constraint firstItem="Jn0-S5-SHn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qzh-0f-zJ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jn0-S5-SHn" secondAttribute="trailing" id="bG6-qk-WhH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerOption1" destination="cLy-ep-hdk" id="ciC-Xz-OO4"/>
+                        <outlet property="answerOption2" destination="RaT-XY-8Nl" id="z4I-Qx-Kqh"/>
+                        <outlet property="answerOption3" destination="MbU-Yn-ywD" id="SZm-G5-9dT"/>
+                        <outlet property="answerOption4" destination="gKq-3I-OKE" id="1xn-Qt-O7r"/>
+                        <outlet property="progressBar" destination="t6o-5c-Wqu" id="nBS-e8-fd2"/>
+                        <outlet property="questionText" destination="0uK-5F-uYd" id="R5V-fu-Lb7"/>
+                        <outlet property="scoreLabel" destination="xEe-RQ-ofk" id="Gkd-Vo-brl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
